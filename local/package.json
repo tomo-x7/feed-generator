@@ -1,0 +1,35 @@
+{
+	"name": "feed-generator",
+	"version": "1.0.0",
+	"description": "atproto feed generator starter kit",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"publishFeed": "tsx scripts/publishFeedGen.ts",
+		"unpublishFeed": "tsx scripts/unpublishFeedGen.ts",
+		"start": "tsx src/index.ts",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@atproto/api": "^0.6.20",
+		"@atproto/lexicon": "^0.2.2",
+		"@atproto/xrpc-server": "^0.6.0",
+		"@skyware/jetstream": "^0.2.1",
+		"@tidbcloud/kysely": "^0.0.4",
+		"@tidbcloud/serverless": "^0.2.0",
+		"dotenv": "^16.0.3",
+		"kysely": "^0.27.5",
+		"multiformats": "^9.9.0",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.1.2",
+		"@types/ws": "^8.5.13",
+		"inquirer": "^12.0.1",
+		"tsx": "^4.19.2",
+		"typescript": "^5.0.4"
+	},
+	"engines": {
+		"node": ">= 18"
+	}
+}
